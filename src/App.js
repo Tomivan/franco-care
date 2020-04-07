@@ -4,7 +4,7 @@ import './App.css';
 
 function Navbar() {
   return(
-    <div>
+    <div className="Navbar">
       <p> Franco CARE</p>
       <ul>
         <li>Clinics & Centers</li>
@@ -18,7 +18,7 @@ function Navbar() {
 
 function Heading() {
   return(
-  <div>
+  <div className="heading">
     <h1>Be Attentive to Your Health</h1>
     <p>It is a long established fact that a reader will be distracted<br />
      by the readable content of a page when looking at its layout<br />
@@ -33,7 +33,7 @@ function Heading() {
 
 function Card() {
   return(
-    <div>
+    <div className="card-container">
       <div className="card">
         <img src="" alt="" />
         Find Doctor
@@ -55,15 +55,15 @@ function Card() {
 }
 function Peadiatrics() {
   return(
-    <div>
-      <div>
+    <div className="peadiatrics">
+      <div className="speciality">
         <div className="box">
           <h4>Speciality Units</h4>
           <p>At USA Neuroscience Foundation</p>
           <img src="./images/nurse" alt=""/>
         </div>
       </div>
-      <div>
+      <div className="children">
         <h4>Children's Peadiatrics Center</h4>
         <p>It is a long established fact that a reader will<br />
            be distracted by the readable content of a <br />
@@ -79,7 +79,7 @@ function Peadiatrics() {
 }
 function Health() {
   return(
-    <div>
+    <div className="Health">
       <div>
         <div className="box">
           <h4>Speciality Units</h4>
@@ -87,8 +87,8 @@ function Health() {
           <img src="../images/nurse.png" alt=""/>
         </div>
       </div>
-      <div>
-        <h4>Children's Peadiatrics Center</h4>
+      <div className="children">
+        <h4>Health Screening Center Check-Up</h4>
         <p>It is a long established fact that a reader will<br />
            be distracted by the readable content of a <br />
            page when looking at its layout. The point of <br />
@@ -103,9 +103,9 @@ function Health() {
 }
 function Ceo() {
   return(
-    <div>
+    <div className="ceo">
       <img src="" alt=""/>
-      <div>
+      <div className="johnnie">
         <h6> Johnnie Walker</h6>
         <p>It is a long established fact that a reader will<br />
            be distracted by the readable content of a <br />
@@ -120,40 +120,43 @@ function Ceo() {
 }
 function Question() {
   return(
-    <div>
+    <div className="question">
       <h4>Have you any question</h4>
-      <p></p>
-      <input />
+      <p>It is a long established fact that a reader will<br />
+          be distracted by the readable content of a <br />
+          page when looking at its layout.</p>
+      <input name="email" placeholder="Enter your email" value=""/>
+      <button className="submit">Submit</button>
     </div>
   )
 }
 function Footer() {
   return(
-    <div>
+    <div className="footer">
       <h5>Franco CARE</h5>
-      <div>
-        <div>
+      <div className="footer-nav">
+        <div className="product">
           <h6>Product</h6>
           <p>Chat</p>
           <p>Event</p>
           <p>Customers</p>
           <p>Stories</p>
         </div>
-        <div>
+        <div className="services">
           <h6>Srevices</h6>
           <p>For Individuals</p>
           <p>Location</p>
           <p>Doctors</p>
           <p>Head Coaches</p>
         </div>
-        <div>
+        <div className="company">
           <h6>Company</h6>
           <p>About</p>
           <p>Mission</p>
           <p>Origin</p>
           <p>Careers</p>
         </div>
-        <div>
+        <div className="more">
           <h6>More</h6>
           <p>Log In</p>
           <p>Alternatives</p>
