@@ -4,14 +4,14 @@ import './App.css';
 
 function Navbar() {
   return(
-    <div className="Navbar">
-      <p> Franco CARE</p>
-      <ul>
+    <div className="navbar">
+      <h5> Franco CARE</h5>
+      <ul className="nav">
         <li>Clinics & Centers</li>
         <li>Packages</li>
         <li>Contact</li>
       </ul>
-      {/* <a link="#">Sign Up</a> */}
+      <p>Sign Up</p>
     </div>
   );
 }
@@ -19,12 +19,12 @@ function Navbar() {
 function Heading() {
   return(
   <div className="heading">
-    <h1>Be Attentive to Your Health</h1>
+    <h1>Be Attentive to<br/> Your Health</h1>
     <p>It is a long established fact that a reader will be distracted<br />
      by the readable content of a page when looking at its layout<br />
      The point of using a Lorem Ipsum is that it has a more-or-less</p>
-     <button>View More</button>
-     <button>Updtate of COVID-19</button>
+     <button className="button-1">View More</button>
+     <button className="button-2">Updtate of COVID-19</button>
      <img src="src/images/unsplash.png" alt="" />
   </div>
   
@@ -34,21 +34,21 @@ function Heading() {
 function Card() {
   return(
     <div className="card-container">
-      <div className="card">
+      <div className="card-2">
         <img src="" alt="" />
-        Find Doctor
+        <p>Find Doctor</p>
       </div>
       <div className="card">
         <img src="" alt="" />
-        Consult a Doctor Now
+        <p>Consult a<br /> Doctor Now</p>
       </div>
       <div className="card">
         <img src="" alt="" />
-        24/7 Ambulance
+        <p>24/7 <br/>Ambulance</p>
       </div>
       <div className="card">
         <img src="" alt="" />
-        Book Appointment
+        <p>Book <br/>Appointment</p>
       </div>
     </div>
   )
@@ -72,22 +72,22 @@ function Peadiatrics() {
            less normal distribution of letters, as<br/>
            opposed to using 'Content here, content <br/>
            here', making it look like readable English.</p>
-        <button> Book Now</button>
+        <button className="button-1"> Book Now</button>
     </div>
     </div>
   )
 }
 function Health() {
   return(
-    <div className="Health">
-      <div>
-        <div className="box">
+    <div className="health">
+      <div className="speciality-2">
+        <div className="box-2">
           <h4>Speciality Units</h4>
-          <p>At USA Neuroscience Foundation</p>
+          <p>At USA Neuroscience Foundation, you'll become part of a thriving medical.</p>
           <img src="../images/nurse.png" alt=""/>
         </div>
       </div>
-      <div className="children">
+      <div className="children-2">
         <h4>Health Screening Center Check-Up</h4>
         <p>It is a long established fact that a reader will<br />
            be distracted by the readable content of a <br />
@@ -96,7 +96,7 @@ function Health() {
            less normal distribution of letters, as<br/>
            opposed to using 'Content here, content <br/>
            here', making it look like readable English.</p>
-        <button> Book Now</button>
+        <button className="button-1"> Book Now</button>
     </div>
     </div>
   )
@@ -107,12 +107,11 @@ function Ceo() {
       <img src="" alt=""/>
       <div className="johnnie">
         <h6> Johnnie Walker</h6>
-        <p>It is a long established fact that a reader will<br />
-           be distracted by the readable content of a <br />
-           page when looking at its layout. The point of <br />
-           using a Lorem Ipsum is that it has a more-or-<br/>
-           less normal distribution of letters, as<br/>
-           opposed to using 'Content here, content <br/>
+        <p>It is a long established fact that a reader will be<br />
+           distracted by the readable content of a page when<br />
+           looking at its layout. The point of using a Lorem Ipsum<br />
+           is that it has a more-or-less normal distribution of<br/>
+           letters, as opposed to using 'Content here, content <br/>
            here', making it look like readable English.</p>
       </div>
     </div>
@@ -121,12 +120,13 @@ function Ceo() {
 function Question() {
   return(
     <div className="question">
-      <h4>Have you any question</h4>
-      <p>It is a long established fact that a reader will<br />
-          be distracted by the readable content of a <br />
-          page when looking at its layout.</p>
+      <h4>Have you any question?</h4>
+      <p>It is a long established fact that a reader will be distracted <br />
+         by the readable content of a page when looking at its </p>
+      <div className="input">
       <input name="email" placeholder="Enter your email" value=""/>
-      <button className="submit">Submit</button>
+      <button className="button-1">Submit</button>
+      </div>
     </div>
   )
 }
