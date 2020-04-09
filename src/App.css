@@ -15,6 +15,9 @@ body{
     display: flex;
     list-style-type: none;
 }
+.limk{
+    padding-top: 10%;
+}
 li {
     margin-left: 20px;
 }
@@ -28,6 +31,24 @@ h5{
     padding-bottom: 10%;
     margin-top: -3%;
     width: 65vw;
+}
+.unsplash {
+    height: 65vh;
+    margin-top: -45%;
+    margin-left: 80%;
+}
+.card-image{
+    height: 8vh;
+    width: 10vw;
+    padding-top: 15%;
+}
+.nurse {
+    height: 40vh;
+}
+.ceo-image{
+    height: 18vh;
+    margin-top: 20vh;
+    margin-left: 27%;
 }
 h1{
     font-size: 3em;
@@ -118,7 +139,7 @@ h1{
     width: 33vw;
     height: 25vh;
     margin-left: 32%;
-    margin-top: 10%;
+    margin-top: -25vh;
     padding-left: 10%;
 }
 .johnnie h6{

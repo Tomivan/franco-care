@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter as Link} from 'react-router-dom';
 import './App.css';
 
 function Navbar() {
@@ -11,7 +12,7 @@ function Navbar() {
         <li>Packages</li>
         <li>Contact</li>
       </ul>
-      <p>Sign Up</p>
+      <Link to="#" className="link">Sign Up</Link>
     </div>
   );
 }
@@ -25,7 +26,7 @@ function Heading() {
      The point of using a Lorem Ipsum is that it has a more-or-less</p>
      <button className="button-1">View More</button>
      <button className="button-2">Updtate of COVID-19</button>
-     <img src="src/images/unsplash.png" alt="" />
+     <img src={require('./images/unsplash.png')}  alt="" className="unsplash"/>
   </div>
   
   );
@@ -35,19 +36,19 @@ function Card() {
   return(
     <div className="card-container">
       <div className="card-2">
-        <img src="" alt="" />
+        <img src={require('./images/disease.svg')} alt="" className="card-image"/>
         <p>Find Doctor</p>
       </div>
       <div className="card">
-        <img src="" alt="" />
+        <img src={require('./images/30-Doctor.svg')} alt="" className="card-image"/>
         <p>Consult a<br /> Doctor Now</p>
       </div>
       <div className="card">
-        <img src="" alt="" />
+        <img src={require('./images/Layer_2.svg')}  alt="" className="card-image"/>
         <p>24/7 <br/>Ambulance</p>
       </div>
       <div className="card">
-        <img src="" alt="" />
+        <img src={require('./images/book.svg')}  alt="" className="card-image"/>
         <p>Book <br/>Appointment</p>
       </div>
     </div>
@@ -60,7 +61,7 @@ function Peadiatrics() {
         <div className="box">
           <h4>Speciality Units</h4>
           <p>At USA Neuroscience Foundation</p>
-          <img src="./images/nurse" alt=""/>
+          <img src={require('./images/nurse.png')} alt="" className="nurse"/>
         </div>
       </div>
       <div className="children">
@@ -104,7 +105,7 @@ function Health() {
 function Ceo() {
   return(
     <div className="ceo">
-      <img src="" alt=""/>
+      <img src={require('./images/ceo.png')} alt="" className="ceo-image"/>
       <div className="johnnie">
         <h6> Johnnie Walker</h6>
         <p>It is a long established fact that a reader will be<br />
